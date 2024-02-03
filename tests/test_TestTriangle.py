@@ -33,7 +33,6 @@ class TestTriangles(unittest.TestCase):
             classifyTriangle(1, 1, 1), "Equilateral", "1,1,1 should be equilateral"
         )
 
-
 if __name__ == "__main__":
     print("Running unit tests")
     unittest.main()
