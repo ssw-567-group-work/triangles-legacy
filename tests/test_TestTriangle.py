@@ -99,13 +99,6 @@ def test_equilateral(a):
 
 
 @given(
-    a=st.integers(min_value=1, max_value=200),
-)
-def test_equilateral(a):
-    assert classifyTriangle(a, a, a) == "Equilateral"
-
-
-@given(
     args=st.one_of(
         st.permutations((3, 4, 5)),
         st.permutations((5, 12, 13)),
