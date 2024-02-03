@@ -126,12 +126,12 @@ def test_right(args):
     a=st.integers(min_value=1, max_value=200),
     b=st.integers(min_value=1, max_value=200),
 )
-def test_isoceles(a, b):
+def test_isosceles(a, b):
     assume(a != b)
     assume(a * 2 > b)
-    assert classifyTriangle(a, a, b) == "Isoceles", f"{a}, {a}, {b}"
-    assert classifyTriangle(a, b, a) == "Isoceles", f"{a}, {b}, {a}"
-    assert classifyTriangle(b, a, a) == "Isoceles", f"{b}, {a}, {a}"
+    assert classifyTriangle(a, a, b) == "Isosceles", f"{a}, {a}, {b}"
+    assert classifyTriangle(a, b, a) == "Isosceles", f"{a}, {b}, {a}"
+    assert classifyTriangle(b, a, a) == "Isosceles", f"{b}, {a}, {a}"
 
 
 @given(
