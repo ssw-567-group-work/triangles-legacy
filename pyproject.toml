@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "template-567"
+name = "triangles-legacy"
 version = "0.1.0"
 description = ""
 authors = ["Carson McManus <carson.mcmanus1@gmail.com>"]
