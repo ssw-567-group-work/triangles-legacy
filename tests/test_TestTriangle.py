@@ -116,6 +116,7 @@ def test_equilateral(a):
         st.permutations((36, 77, 85)),
         st.permutations((39, 80, 89)),
         st.permutations((65, 72, 97)),
+        st.permutations((28, 96, 100)),
     )
 )
 def test_right(args):
@@ -143,6 +144,7 @@ def test_isosceles(a, b):
 def test_scalene(a, b, c):
     assume(a + b > c and a + c > b and b + c > a)
     assume(a != b and b != c and a != c)
+    assume(classifyTriangle(a, b, c) != "Right")
     assert classifyTriangle(a, b, c) == "Scalene"
 
 
